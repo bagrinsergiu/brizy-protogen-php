@@ -1,0 +1,13 @@
+{
+  "name": "bagrinsergiu/brizy-protogen-php",
+  "description": "Brizy Message Classes",
+  "type": "library",
+  "require": {
+    "google/protobuf": "^3.17"
+  },
+  "autoload": {
+    "psr-4": {
+      "BrizyMessage\\": "src/"
+    }
+  }
+}
