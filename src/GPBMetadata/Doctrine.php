@@ -16,9 +16,10 @@ class Doctrine
         }
         $pool->internalAddGeneratedFile(
             '
-C
+W
 doctrine.protobrizy.message.doctrine"
-DoctrineMessagebproto3'
+DoctrineMessage"
+DoctrineMessage2bproto3'
         , true);
 
         static::$is_initialized = true;
