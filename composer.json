@@ -3,7 +3,8 @@
   "description": "Brizy Message Classes",
   "type": "library",
   "require": {
-    "google/protobuf": "^3.17"
+    "google/protobuf": "^3.17",
+    "symfony/messenger": "^4.4 || ^5.0"
   },
   "autoload": {
     "psr-4": {

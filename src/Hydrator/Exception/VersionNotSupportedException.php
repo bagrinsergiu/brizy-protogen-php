@@ -1,0 +1,12 @@
+<?php
+
+declare(strict_types=1);
+
+namespace BrizyMessage\Hydrator\Exception;
+
+/**
+ * Throw this when the Hydrator do support the message type but not the version.
+ */
+final class VersionNotSupportedException extends \RuntimeException implements HydratorException
+{
+}
