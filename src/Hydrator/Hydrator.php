@@ -32,7 +32,7 @@ final class Hydrator implements ArrayToMessageInterface
 
         foreach ($this->hydrators as $hydrator) {
             try {
-                $isSupported = $hydrator->supportsHydrate($data['identifier'] ?? '', $data['version'] ?? 0);
+                $isSupported = $hydrator->supportsHydrate( $data['version'] ?? 0);
             } catch (VersionNotSupportedException $e) {
                 $exception = $e;
                 continue;

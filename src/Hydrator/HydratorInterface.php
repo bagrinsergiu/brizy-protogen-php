@@ -13,7 +13,7 @@ interface HydratorInterface
      *
      * @return object
      */
-    public function toMessage(array $payload, int $version);
+    public function toMessage(string $payload, int $version);
 
     /**
      * Does this Hydrator support this identifier and version?
