@@ -4,12 +4,11 @@ declare(strict_types=1);
 
 namespace BrizySerializer\Hydrator;
 
-use Brizy\Doctrine\DoctrineMessage;
+use BrizyMessage\Doctrine\DoctrineMessage;
+use BrizyMessage\Message;
 use BrizySerializer\Hydrator\Exception\ConvertToMessageFailedException;
 use BrizySerializer\Hydrator\Exception\VersionNotSupportedException;
 use BrizySerializer\Transformer\ProtobufTransformer;
-use Brizy\Message;
-use Message\Message\DescriminatorType;
 
 
 final class ProtobufHydrator implements HydratorInterface
@@ -25,7 +24,7 @@ final class ProtobufHydrator implements HydratorInterface
         $message->mergeFromString($payload);
 
         switch ($message->getDescriminator()) {
-            case DescriminatorType::DOCTRINE_MESSAGE:
+            case Message\DescriminatorType::DOCTRINE_MESSAGE:
                 return $this->getInstanceOf(DoctrineMessage::class, $payload);
             default:
                 throw new ConvertToMessageFailedException("Unknown descriminator value");

@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace BrizySerializer\Transformer;
 
-use BrizySerializer\Transformer\Exception\ConvertToArrayFailedException;
-use BrizySerializer\Transformer\Exception\TransformerNotFoundException;
 use Symfony\Component\Messenger\Envelope;
 use Google\Protobuf\Internal\Message;
 
@@ -27,7 +25,7 @@ final class ProtobufTransformer implements TransformerInterface
      */
     public function getPayload(Envelope $message): array {
         /**
-         * @var Message $message;
+         * @var \BrizyMessage\Message $message;
          */
         $message = $message->getMessage();
 
