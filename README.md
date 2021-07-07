@@ -11,11 +11,11 @@ This library contain message classes that are sent between Brizy service.
 ```yaml
     # https://github.com/Happyr/message-serializer
     _instanceof:
-      BrizyMessage\MessageSerializer\Transformer\TransformerInterface:
+      BrizyMessage\Transformer\TransformerInterface:
             tags:
                 - { name: 'brizy.message_serializer.transformer'}
 
-      BrizyMessage\MessageSerializer\Hydrator\HydratorInterface:
+      BrizyMessage\Hydrator\HydratorInterface:
             tags:
                 - { name: 'brizy.message_serializer.hydrator'}
 ```
@@ -23,18 +23,18 @@ This library contain message classes that are sent between Brizy service.
 2. Create a new config file in config/packages/message_serializer.yaml with the folowing content
 ```yaml
 services:
-  Brizy\MessageSerializer\Serializer:
+  BrizySerializer\Serializer:
     autowire: true
 
-  BrizyMessage\MessageSerializer\Transformer\MessageToArrayInterface: '@brizy.message_serializer.transformer'
+  BrizyMessage\Transformer\MessageToArrayInterface: '@brizy.message_serializer.transformer'
   BrizyMessage.message_serializer.transformer:
-    class: Happyr\MessageSerializer\Transformer\Transformer
+    class: BrizySerializer\Transformer\Transformer
     arguments: [!tagged brizy.message_serializer.transformer]
 
 
-  BrizyMessage\MessageSerializer\Hydrator\ArrayToMessageInterface: '@brizy.message_serializer.hydrator'
+  BrizyMessage\Hydrator\ArrayToMessageInterface: '@brizy.message_serializer.hydrator'
   brizy.message_serializer.hydrator:
-    class: Happyr\MessageSerializer\Hydrator\Hydrator
+    class: BrizySerializer\Hydrator\Hydrator
     arguments: [!tagged brizy.message_serializer.hydrator]
 ```
 

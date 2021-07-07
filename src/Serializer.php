@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BrizyMessage;
+namespace BrizySerializer;
 
 use BrizySerializer\Hydrator\ArrayToMessageInterface;
 use BrizySerializer\Hydrator\Exception\HydratorException;
