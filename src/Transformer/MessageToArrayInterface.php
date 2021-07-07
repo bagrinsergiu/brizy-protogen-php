@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BrizyMessage\Transformer;
+namespace BrizySerializer\Transformer;
 
-use BrizyMessage\Transformer\Exception\TransformerException;
+use BrizySerializer\Transformer\Exception\TransformerException;
 use Symfony\Component\Messenger\Envelope;
 
 interface MessageToArrayInterface

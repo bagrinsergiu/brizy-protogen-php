@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BrizyMessage\Hydrator;
+namespace BrizySerializer\Hydrator;
 
-use BrizyMessage\Hydrator\Exception\HydratorException;
+use BrizySerializer\Hydrator\Exception\HydratorException;
 
 interface ArrayToMessageInterface
 {

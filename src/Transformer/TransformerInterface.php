@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BrizyMessage\Transformer;
+namespace BrizySerializer\Transformer;
 
 use Symfony\Component\Messenger\Envelope;
 

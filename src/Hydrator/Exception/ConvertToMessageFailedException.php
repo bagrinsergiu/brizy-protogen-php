@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BrizyMessage\Hydrator\Exception;
+namespace BrizySerializer\Hydrator\Exception;
 
 /**
  * This is thrown if a Hydator had an issue hydrating a message.

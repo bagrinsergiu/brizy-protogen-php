@@ -8,7 +8,9 @@
   },
   "autoload": {
     "psr-4": {
-      "BrizyMessage\\": "src/"
+      "BrizyMessage\\": "build/BrizyMessage",
+      "GPBMetadata\\": "build/GPBMetadata",
+      "BrizySerializer\\": "src/"
     }
   }
 }

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BrizyMessage\Hydrator;
+namespace BrizySerializer\Hydrator;
 
-use BrizyMessage\Hydrator\Exception\ConvertToMessageFailedException;
-use BrizyMessage\Hydrator\Exception\HydratorNotFoundException;
-use BrizyMessage\Hydrator\Exception\VersionNotSupportedException;
+use BrizySerializer\Hydrator\Exception\ConvertToMessageFailedException;
+use BrizySerializer\Hydrator\Exception\HydratorNotFoundException;
+use BrizySerializer\Hydrator\Exception\VersionNotSupportedException;
 
 final class Hydrator implements ArrayToMessageInterface
 {

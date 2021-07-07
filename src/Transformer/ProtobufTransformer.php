@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BrizyMessage\Transformer;
+namespace BrizySerializer\Transformer;
 
-use BrizyMessage\Transformer\Exception\ConvertToArrayFailedException;
-use BrizyMessage\Transformer\Exception\TransformerNotFoundException;
+use BrizySerializer\Transformer\Exception\ConvertToArrayFailedException;
+use BrizySerializer\Transformer\Exception\TransformerNotFoundException;
 use Symfony\Component\Messenger\Envelope;
 use Google\Protobuf\Internal\Message;
 

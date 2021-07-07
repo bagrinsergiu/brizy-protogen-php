@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace BrizyMessage;
 
-use BrizyMessage\Transformer\Exception\TransformerNotFoundException;
+use BrizySerializer\Transformer\Exception\TransformerNotFoundException;
 use Symfony\Component\Messenger\Envelope;
 use Symfony\Component\Messenger\Exception\MessageDecodingFailedException;
 use Symfony\Component\Messenger\Transport\Serialization\SerializerInterface;

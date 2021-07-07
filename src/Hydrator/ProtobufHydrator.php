@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BrizyMessage\Hydrator;
+namespace BrizySerializer\Hydrator;
 
 use Brizy\Doctrine\DoctrineMessage;
-use BrizyMessage\Hydrator\Exception\ConvertToMessageFailedException;
-use BrizyMessage\Hydrator\Exception\VersionNotSupportedException;
-use BrizyMessage\Transformer\ProtobufTransformer;
+use BrizySerializer\Hydrator\Exception\ConvertToMessageFailedException;
+use BrizySerializer\Hydrator\Exception\VersionNotSupportedException;
+use BrizySerializer\Transformer\ProtobufTransformer;
 use Brizy\Message;
 use Message\Message\DescriminatorType;
 

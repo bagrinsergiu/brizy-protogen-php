@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BrizyMessage\Transformer\Exception;
+namespace BrizySerializer\Transformer\Exception;
 
 /**
  * This is thrown if a transformer had an issue transforming a message.

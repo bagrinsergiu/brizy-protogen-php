@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace BrizyMessage;
 
-use BrizyMessage\Hydrator\ArrayToMessageInterface;
-use BrizyMessage\Hydrator\Exception\HydratorException;
-use BrizyMessage\Transformer\MessageToArrayInterface;
+use BrizySerializer\Hydrator\ArrayToMessageInterface;
+use BrizySerializer\Hydrator\Exception\HydratorException;
+use BrizySerializer\Transformer\MessageToArrayInterface;
 use Symfony\Component\Messenger\Envelope;
 use Symfony\Component\Messenger\Exception\MessageDecodingFailedException;
 use Symfony\Component\Messenger\Stamp\NonSendableStampInterface;
