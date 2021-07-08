@@ -23,7 +23,7 @@ final class ProtobufTransformer implements TransformerInterface
      *
      * @param Envelope  $message
      */
-    public function getPayload(Envelope $message): array {
+    public function getPayload(Envelope $message) {
         /**
          * @var \BrizyMessage\Message $message;
          */

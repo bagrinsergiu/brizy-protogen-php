@@ -12,12 +12,12 @@ This library contain message classes that are sent between Brizy service.
     # https://github.com/Happyr/message-serializer
     _instanceof:
       BrizyMessage\Transformer\TransformerInterface:
-            tags:
-                - { name: 'brizy.message_serializer.transformer'}
+        tags:
+          - { name: 'message_serializer.transformer'}
 
       BrizyMessage\Hydrator\HydratorInterface:
-            tags:
-                - { name: 'brizy.message_serializer.hydrator'}
+        tags:
+          - { name: 'message_serializer.hydrator'}
 ```
 
 2. Create a new config file in config/packages/message_serializer.yaml with the folowing content
@@ -26,20 +26,20 @@ services:
   BrizySerializer\Serializer:
     autowire: true
 
-  BrizyMessage\Transformer\MessageToArrayInterface: '@brizy.message_serializer.transformer'
-  BrizyMessage.message_serializer.transformer:
+  BrizySerializer\Transformer\MessageToArrayInterface: '@brizy.message_serializer.transformer'
+  brizy.message_serializer.transformer:
     class: BrizySerializer\Transformer\Transformer
-    arguments: [!tagged brizy.message_serializer.transformer]
+    arguments: [!tagged message_serializer.transformer]
 
 
-  BrizyMessage\Hydrator\ArrayToMessageInterface: '@brizy.message_serializer.hydrator'
+  BrizySerializer\Hydrator\ArrayToMessageInterface: '@brizy.message_serializer.hydrator'
   brizy.message_serializer.hydrator:
     class: BrizySerializer\Hydrator\Hydrator
-    arguments: [!tagged brizy.message_serializer.hydrator]
+    arguments: [!tagged message_serializer.hydrator]
 ```
 
 2. Set the serializer class for each transport you want to use the messages
 
 ```yaml 
-    serializer: 'BrizyMessage\MessageSerializer\Serializer'
+    serializer: 'BrizySerializer\Serializer'
 ```

@@ -18,7 +18,7 @@ interface TransformerInterface
      *
      * @param object $message
      */
-    public function getPayload(Envelope $message): array;
+    public function getPayload(Envelope $message);
 
     /**
      * Does this transformer support this kind of message?
