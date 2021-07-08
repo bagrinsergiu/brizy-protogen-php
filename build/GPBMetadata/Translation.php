@@ -17,7 +17,7 @@ class Translation
         \GPBMetadata\Message::initOnce();
         $pool->internalAddGeneratedFile(
             '
-Ë
+Õ
 translation.protobrizyMessage.translation"“
 TranslateEntityMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
@@ -25,7 +25,12 @@ class Translation
 project_id (	
 	entity_id (	
 
-entity_url (	bproto3'
+entity_url (	"‡
+RemoveEntityTranslationMessage>
+descriminator (2\'.brizyMessage.Message.DescriminatorType
+
+project_id (	
+	entity_id (	bproto3'
         , true);
 
         static::$is_initialized = true;

@@ -23,11 +23,16 @@ class DescriminatorType
      * Generated from protobuf enum <code>TRANSLATE_ENTITY_MESSAGE = 2;</code>
      */
     const TRANSLATE_ENTITY_MESSAGE = 2;
+    /**
+     * Generated from protobuf enum <code>REMOVE_ENTITY_TRANSLATION_MESSAGE = 3;</code>
+     */
+    const REMOVE_ENTITY_TRANSLATION_MESSAGE = 3;
 
     private static $valueToName = [
         self::NONE => 'NONE',
         self::DOCTRINE_MESSAGE => 'DOCTRINE_MESSAGE',
         self::TRANSLATE_ENTITY_MESSAGE => 'TRANSLATE_ENTITY_MESSAGE',
+        self::REMOVE_ENTITY_TRANSLATION_MESSAGE => 'REMOVE_ENTITY_TRANSLATION_MESSAGE',
     ];
 
     public static function name($value)
