@@ -28,6 +28,8 @@ final class ProtobufHydrator implements HydratorInterface
                 return $this->getInstanceOf(DoctrineEventMessage::class, $payload);
             case Message\DescriminatorType::TRANSLATE_ENTITY_MESSAGE:
                 return $this->getInstanceOf(TranslateEntityMessage::class, $payload);
+            case Message\DescriminatorType::REMOVE_ENTITY_TRANSLATION_MESSAGE:
+                return $this->getInstanceOf(RemoveEntityTrans*lationMessage::class, $payload);
             default:
                 throw new ConvertToMessageFailedException("Unknown descriminator value");
         }

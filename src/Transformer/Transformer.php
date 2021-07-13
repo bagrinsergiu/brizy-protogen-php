@@ -35,7 +35,7 @@ final class Transformer implements MessageToArrayInterface
                 return [
                     'version' => $transformer->getVersion(),
                     'timestamp' => time(),
-                    'payload' => $transformer->getPayload($message),
+                    'payload' => base64_encode($transformer->getPayload($message)),
                 ];
             } catch (\Throwable $throwable) {
                 throw new ConvertToArrayFailedException(sprintf('Transformer "%s" failed to transform a message.', get_class($transformer)), 0, $throwable);
