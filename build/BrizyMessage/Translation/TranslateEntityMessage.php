@@ -18,17 +18,21 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
      */
     protected $descriminator = 0;
     /**
-     * Generated from protobuf field <code>string project_id = 2;</code>
+     * Generated from protobuf field <code>int32 project_id = 2;</code>
      */
-    protected $project_id = '';
+    protected $project_id = 0;
     /**
-     * Generated from protobuf field <code>string entity_id = 3;</code>
+     * Generated from protobuf field <code>int32 entity_id = 3;</code>
      */
-    protected $entity_id = '';
+    protected $entity_id = 0;
     /**
-     * Generated from protobuf field <code>string entity_url = 4;</code>
+     * Generated from protobuf field <code>string entity_iri = 4;</code>
      */
-    protected $entity_url = '';
+    protected $entity_iri = '';
+    /**
+     * Generated from protobuf field <code>string project_iri = 5;</code>
+     */
+    protected $project_iri = '';
 
     /**
      * Constructor.
@@ -37,9 +41,10 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $descriminator
-     *     @type string $project_id
-     *     @type string $entity_id
-     *     @type string $entity_url
+     *     @type int $project_id
+     *     @type int $entity_id
+     *     @type string $entity_iri
+     *     @type string $project_iri
      * }
      */
     public function __construct($data = NULL) {
@@ -70,8 +75,8 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string project_id = 2;</code>
-     * @return string
+     * Generated from protobuf field <code>int32 project_id = 2;</code>
+     * @return int
      */
     public function getProjectId()
     {
@@ -79,21 +84,21 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string project_id = 2;</code>
-     * @param string $var
+     * Generated from protobuf field <code>int32 project_id = 2;</code>
+     * @param int $var
      * @return $this
      */
     public function setProjectId($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkInt32($var);
         $this->project_id = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>string entity_id = 3;</code>
-     * @return string
+     * Generated from protobuf field <code>int32 entity_id = 3;</code>
+     * @return int
      */
     public function getEntityId()
     {
@@ -101,36 +106,58 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string entity_id = 3;</code>
-     * @param string $var
+     * Generated from protobuf field <code>int32 entity_id = 3;</code>
+     * @param int $var
      * @return $this
      */
     public function setEntityId($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkInt32($var);
         $this->entity_id = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>string entity_url = 4;</code>
+     * Generated from protobuf field <code>string entity_iri = 4;</code>
      * @return string
      */
-    public function getEntityUrl()
+    public function getEntityIri()
     {
-        return $this->entity_url;
+        return $this->entity_iri;
     }
 
     /**
-     * Generated from protobuf field <code>string entity_url = 4;</code>
+     * Generated from protobuf field <code>string entity_iri = 4;</code>
      * @param string $var
      * @return $this
      */
-    public function setEntityUrl($var)
+    public function setEntityIri($var)
     {
         GPBUtil::checkString($var, True);
-        $this->entity_url = $var;
+        $this->entity_iri = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string project_iri = 5;</code>
+     * @return string
+     */
+    public function getProjectIri()
+    {
+        return $this->project_iri;
+    }
+
+    /**
+     * Generated from protobuf field <code>string project_iri = 5;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setProjectIri($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->project_iri = $var;
 
         return $this;
     }

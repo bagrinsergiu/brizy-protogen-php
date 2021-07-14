@@ -17,15 +17,16 @@ class Translation
         \GPBMetadata\Message::initOnce();
         $pool->internalAddGeneratedFile(
             '
-Õ
-translation.protobrizyMessage.translation"“
+ê
+translation.protobrizyMessage.translation"¨
 TranslateEntityMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 
-project_id (	
-	entity_id (	
+project_id (
+	entity_id (
 
-entity_url (	"‡
+entity_iri (	
+project_iri (	"‡
 RemoveEntityTranslationMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 
