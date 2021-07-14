@@ -33,6 +33,10 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string project_iri = 5;</code>
      */
     protected $project_iri = '';
+    /**
+     * Generated from protobuf field <code>string entity_url = 6;</code>
+     */
+    protected $entity_url = '';
 
     /**
      * Constructor.
@@ -45,6 +49,7 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
      *     @type int $entity_id
      *     @type string $entity_iri
      *     @type string $project_iri
+     *     @type string $entity_url
      * }
      */
     public function __construct($data = NULL) {
@@ -158,6 +163,28 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->project_iri = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string entity_url = 6;</code>
+     * @return string
+     */
+    public function getEntityUrl()
+    {
+        return $this->entity_url;
+    }
+
+    /**
+     * Generated from protobuf field <code>string entity_url = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEntityUrl($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->entity_url = $var;
 
         return $this;
     }
