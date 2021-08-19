@@ -18,9 +18,9 @@ class NotificationMessage extends \Google\Protobuf\Internal\Message
      */
     protected $descriminator = 0;
     /**
-     * Generated from protobuf field <code>string event_name = 2;</code>
+     * Generated from protobuf field <code>string notification_name = 2;</code>
      */
-    protected $event_name = '';
+    protected $notification_name = '';
     /**
      * Generated from protobuf field <code>string object = 3;</code>
      */
@@ -45,7 +45,7 @@ class NotificationMessage extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $descriminator
-     *     @type string $event_name
+     *     @type string $notification_name
      *     @type string $object
      *     @type string $email
      *     @type string $access_token
@@ -80,23 +80,23 @@ class NotificationMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string event_name = 2;</code>
+     * Generated from protobuf field <code>string notification_name = 2;</code>
      * @return string
      */
-    public function getEventName()
+    public function getNotificationName()
     {
-        return $this->event_name;
+        return $this->notification_name;
     }
 
     /**
-     * Generated from protobuf field <code>string event_name = 2;</code>
+     * Generated from protobuf field <code>string notification_name = 2;</code>
      * @param string $var
      * @return $this
      */
-    public function setEventName($var)
+    public function setNotificationName($var)
     {
         GPBUtil::checkString($var, True);
-        $this->event_name = $var;
+        $this->notification_name = $var;
 
         return $this;
     }
