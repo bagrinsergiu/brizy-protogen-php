@@ -43,3 +43,7 @@ services:
 ```yaml 
     serializer: 'BrizySerializer\Serializer'
 ```
+
+
+## Adding support for new messages
+Open the ProtobufHydrator class and in method toMessage add the code that will mange the new message.
