@@ -35,6 +35,12 @@ class DoctrineEventMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string entity_snapshot = 4;</code>
      */
     protected $entity_snapshot = '';
+    /**
+     * entity name
+     *
+     * Generated from protobuf field <code>string entity_class = 5;</code>
+     */
+    protected $entity_class = '';
 
     /**
      * Constructor.
@@ -49,6 +55,8 @@ class DoctrineEventMessage extends \Google\Protobuf\Internal\Message
      *           entity id
      *     @type string $entity_snapshot
      *           the entity json encoded
+     *     @type string $entity_class
+     *           entity name
      * }
      */
     public function __construct($data = NULL) {
@@ -152,6 +160,32 @@ class DoctrineEventMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->entity_snapshot = $var;
+
+        return $this;
+    }
+
+    /**
+     * entity name
+     *
+     * Generated from protobuf field <code>string entity_class = 5;</code>
+     * @return string
+     */
+    public function getEntityClass()
+    {
+        return $this->entity_class;
+    }
+
+    /**
+     * entity name
+     *
+     * Generated from protobuf field <code>string entity_class = 5;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEntityClass($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->entity_class = $var;
 
         return $this;
     }
