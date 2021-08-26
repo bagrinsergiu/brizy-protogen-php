@@ -6,12 +6,12 @@ namespace BrizySerializer\Hydrator;
 
 use BrizyMessage\Doctrine\DoctrineEventMessage;
 use BrizyMessage\Message;
+use BrizyMessage\Notification\NotificationMessage;
 use BrizySerializer\Hydrator\Exception\ConvertToMessageFailedException;
 use BrizySerializer\Hydrator\Exception\VersionNotSupportedException;
 use BrizySerializer\Transformer\ProtobufTransformer;
 use BrizyMessage\Translation\TranslateEntityMessage;
 use BrizyMessage\Translation\RemoveEntityTranslationMessage;
-use GPBMetadata\Notification;
 
 final class ProtobufHydrator implements HydratorInterface
 {
@@ -33,7 +33,7 @@ final class ProtobufHydrator implements HydratorInterface
             case Message\DescriminatorType::REMOVE_ENTITY_TRANSLATION_MESSAGE:
                 return $this->getInstanceOf(RemoveEntityTranslationMessage::class, $payload);
             case Message\DescriminatorType::NOTIFICATION_MESSAGE:
-                return $this->getInstanceOf(Notification::class, $payload);
+                return $this->getInstanceOf(NotificationMessage::class, $payload);
             default:
                 throw new ConvertToMessageFailedException("Unknown descriminator value");
         }
