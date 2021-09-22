@@ -11,11 +11,11 @@ This library contain message classes that are sent between Brizy service.
 ```yaml
     # https://github.com/Happyr/message-serializer
     _instanceof:
-      BrizyMessage\Transformer\TransformerInterface:
+      BrizySerializer\Transformer\TransformerInterface:
         tags:
           - { name: 'message_serializer.transformer'}
 
-      BrizyMessage\Hydrator\HydratorInterface:
+      BrizySerializer\Hydrator\HydratorInterface:
         tags:
           - { name: 'message_serializer.hydrator'}
 ```
