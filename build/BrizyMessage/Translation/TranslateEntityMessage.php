@@ -25,6 +25,10 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string project_iri = 3;</code>
      */
     protected $project_iri = '';
+    /**
+     * Generated from protobuf field <code>string access_token = 5;</code>
+     */
+    protected $access_token = '';
 
     /**
      * Constructor.
@@ -35,6 +39,7 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
      *     @type int $descriminator
      *     @type string $entity_iri
      *     @type string $project_iri
+     *     @type string $access_token
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +109,28 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->project_iri = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string access_token = 5;</code>
+     * @return string
+     */
+    public function getAccessToken()
+    {
+        return $this->access_token;
+    }
+
+    /**
+     * Generated from protobuf field <code>string access_token = 5;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAccessToken($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->access_token = $var;
 
         return $this;
     }
