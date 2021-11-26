@@ -17,15 +17,16 @@ class Notification
         \GPBMetadata\Message::initOnce();
         $pool->internalAddGeneratedFile(
             '
-ð
-notification.protobrizyMessage.notification"¶
+ƒ
+notification.protobrizyMessage.notification"É
 NotificationMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 notification_name (	
 object (	
 email (	
 access_token (	
-project (bproto3'
+project (
+	object_id (bproto3'
         , true);
 
         static::$is_initialized = true;

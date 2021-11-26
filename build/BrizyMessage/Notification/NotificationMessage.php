@@ -37,6 +37,10 @@ class NotificationMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 project = 6;</code>
      */
     protected $project = 0;
+    /**
+     * Generated from protobuf field <code>int32 object_id = 7;</code>
+     */
+    protected $object_id = 0;
 
     /**
      * Constructor.
@@ -50,6 +54,7 @@ class NotificationMessage extends \Google\Protobuf\Internal\Message
      *     @type string $email
      *     @type string $access_token
      *     @type int $project
+     *     @type int $object_id
      * }
      */
     public function __construct($data = NULL) {
@@ -185,6 +190,28 @@ class NotificationMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->project = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 object_id = 7;</code>
+     * @return int
+     */
+    public function getObjectId()
+    {
+        return $this->object_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 object_id = 7;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setObjectId($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->object_id = $var;
 
         return $this;
     }
