@@ -41,6 +41,12 @@ class DoctrineEventMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string entity_class = 5;</code>
      */
     protected $entity_class = '';
+    /**
+     * access token
+     *
+     * Generated from protobuf field <code>string access_token = 6;</code>
+     */
+    protected $access_token = '';
 
     /**
      * Constructor.
@@ -57,6 +63,8 @@ class DoctrineEventMessage extends \Google\Protobuf\Internal\Message
      *           the entity json encoded
      *     @type string $entity_class
      *           entity name
+     *     @type string $access_token
+     *           access token
      * }
      */
     public function __construct($data = NULL) {
@@ -186,6 +194,32 @@ class DoctrineEventMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->entity_class = $var;
+
+        return $this;
+    }
+
+    /**
+     * access token
+     *
+     * Generated from protobuf field <code>string access_token = 6;</code>
+     * @return string
+     */
+    public function getAccessToken()
+    {
+        return $this->access_token;
+    }
+
+    /**
+     * access token
+     *
+     * Generated from protobuf field <code>string access_token = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAccessToken($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->access_token = $var;
 
         return $this;
     }
