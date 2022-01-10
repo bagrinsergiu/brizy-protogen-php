@@ -26,9 +26,13 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
      */
     protected $project_iri = '';
     /**
-     * Generated from protobuf field <code>string access_token = 5;</code>
+     * Generated from protobuf field <code>string cloud_access_token = 5;</code>
      */
-    protected $access_token = '';
+    protected $cloud_access_token = '';
+    /**
+     * Generated from protobuf field <code>string brziy_api_access_token = 6;</code>
+     */
+    protected $brziy_api_access_token = '';
 
     /**
      * Constructor.
@@ -39,7 +43,8 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
      *     @type int $descriminator
      *     @type string $entity_iri
      *     @type string $project_iri
-     *     @type string $access_token
+     *     @type string $cloud_access_token
+     *     @type string $brziy_api_access_token
      * }
      */
     public function __construct($data = NULL) {
@@ -114,23 +119,45 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string access_token = 5;</code>
+     * Generated from protobuf field <code>string cloud_access_token = 5;</code>
      * @return string
      */
-    public function getAccessToken()
+    public function getCloudAccessToken()
     {
-        return $this->access_token;
+        return $this->cloud_access_token;
     }
 
     /**
-     * Generated from protobuf field <code>string access_token = 5;</code>
+     * Generated from protobuf field <code>string cloud_access_token = 5;</code>
      * @param string $var
      * @return $this
      */
-    public function setAccessToken($var)
+    public function setCloudAccessToken($var)
     {
         GPBUtil::checkString($var, True);
-        $this->access_token = $var;
+        $this->cloud_access_token = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string brziy_api_access_token = 6;</code>
+     * @return string
+     */
+    public function getBrziyApiAccessToken()
+    {
+        return $this->brziy_api_access_token;
+    }
+
+    /**
+     * Generated from protobuf field <code>string brziy_api_access_token = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setBrziyApiAccessToken($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->brziy_api_access_token = $var;
 
         return $this;
     }
