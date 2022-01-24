@@ -31,6 +31,22 @@ class DescriminatorType
      * Generated from protobuf enum <code>NOTIFICATION_MESSAGE = 4;</code>
      */
     const NOTIFICATION_MESSAGE = 4;
+    /**
+     * Generated from protobuf enum <code>CLOUD_CREATE_USER_MESSAGE = 5;</code>
+     */
+    const CLOUD_CREATE_USER_MESSAGE = 5;
+    /**
+     * Generated from protobuf enum <code>CLOUD_DELETE_USER_MESSAGE = 6;</code>
+     */
+    const CLOUD_DELETE_USER_MESSAGE = 6;
+    /**
+     * Generated from protobuf enum <code>CLOUD_CREATE_PROJECT_MESSAGE = 7;</code>
+     */
+    const CLOUD_CREATE_PROJECT_MESSAGE = 7;
+    /**
+     * Generated from protobuf enum <code>CLOUD_DELETE_PROJECT_MESSAGE = 8;</code>
+     */
+    const CLOUD_DELETE_PROJECT_MESSAGE = 8;
 
     private static $valueToName = [
         self::NONE => 'NONE',
@@ -38,6 +54,10 @@ class DescriminatorType
         self::TRANSLATE_ENTITY_MESSAGE => 'TRANSLATE_ENTITY_MESSAGE',
         self::REMOVE_ENTITY_TRANSLATION_MESSAGE => 'REMOVE_ENTITY_TRANSLATION_MESSAGE',
         self::NOTIFICATION_MESSAGE => 'NOTIFICATION_MESSAGE',
+        self::CLOUD_CREATE_USER_MESSAGE => 'CLOUD_CREATE_USER_MESSAGE',
+        self::CLOUD_DELETE_USER_MESSAGE => 'CLOUD_DELETE_USER_MESSAGE',
+        self::CLOUD_CREATE_PROJECT_MESSAGE => 'CLOUD_CREATE_PROJECT_MESSAGE',
+        self::CLOUD_DELETE_PROJECT_MESSAGE => 'CLOUD_DELETE_PROJECT_MESSAGE',
     ];
 
     public static function name($value)
