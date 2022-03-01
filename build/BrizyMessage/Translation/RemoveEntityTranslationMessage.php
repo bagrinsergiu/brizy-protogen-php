@@ -26,9 +26,9 @@ class RemoveEntityTranslationMessage extends \Google\Protobuf\Internal\Message
      */
     protected $project_iri = '';
     /**
-     * Generated from protobuf field <code>string entity_class = 4;</code>
+     * Generated from protobuf field <code>.brizyMessage.translation.TranslateEntity entity_class = 4;</code>
      */
-    protected $entity_class = '';
+    protected $entity_class = 0;
 
     /**
      * Constructor.
@@ -39,7 +39,7 @@ class RemoveEntityTranslationMessage extends \Google\Protobuf\Internal\Message
      *     @type int $descriminator
      *     @type string $entity_iri
      *     @type string $project_iri
-     *     @type string $entity_class
+     *     @type int $entity_class
      * }
      */
     public function __construct($data = NULL) {
@@ -114,8 +114,8 @@ class RemoveEntityTranslationMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string entity_class = 4;</code>
-     * @return string
+     * Generated from protobuf field <code>.brizyMessage.translation.TranslateEntity entity_class = 4;</code>
+     * @return int
      */
     public function getEntityClass()
     {
@@ -123,13 +123,13 @@ class RemoveEntityTranslationMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string entity_class = 4;</code>
-     * @param string $var
+     * Generated from protobuf field <code>.brizyMessage.translation.TranslateEntity entity_class = 4;</code>
+     * @param int $var
      * @return $this
      */
     public function setEntityClass($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkEnum($var, \BrizyMessage\Translation\TranslateEntity::class);
         $this->entity_class = $var;
 
         return $this;
