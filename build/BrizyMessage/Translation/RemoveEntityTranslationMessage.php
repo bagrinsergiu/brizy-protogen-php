@@ -25,6 +25,10 @@ class RemoveEntityTranslationMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string project_iri = 3;</code>
      */
     protected $project_iri = '';
+    /**
+     * Generated from protobuf field <code>string entity_class = 4;</code>
+     */
+    protected $entity_class = '';
 
     /**
      * Constructor.
@@ -35,6 +39,7 @@ class RemoveEntityTranslationMessage extends \Google\Protobuf\Internal\Message
      *     @type int $descriminator
      *     @type string $entity_iri
      *     @type string $project_iri
+     *     @type string $entity_class
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +109,28 @@ class RemoveEntityTranslationMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->project_iri = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string entity_class = 4;</code>
+     * @return string
+     */
+    public function getEntityClass()
+    {
+        return $this->entity_class;
+    }
+
+    /**
+     * Generated from protobuf field <code>string entity_class = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEntityClass($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->entity_class = $var;
 
         return $this;
     }

@@ -33,6 +33,10 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string brziy_api_access_token = 6;</code>
      */
     protected $brziy_api_access_token = '';
+    /**
+     * Generated from protobuf field <code>string entity_class = 7;</code>
+     */
+    protected $entity_class = '';
 
     /**
      * Constructor.
@@ -45,6 +49,7 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
      *     @type string $project_iri
      *     @type string $cloud_access_token
      *     @type string $brziy_api_access_token
+     *     @type string $entity_class
      * }
      */
     public function __construct($data = NULL) {
@@ -158,6 +163,28 @@ class TranslateEntityMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->brziy_api_access_token = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string entity_class = 7;</code>
+     * @return string
+     */
+    public function getEntityClass()
+    {
+        return $this->entity_class;
+    }
+
+    /**
+     * Generated from protobuf field <code>string entity_class = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEntityClass($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->entity_class = $var;
 
         return $this;
     }

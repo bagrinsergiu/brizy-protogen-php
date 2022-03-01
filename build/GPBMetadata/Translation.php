@@ -17,20 +17,22 @@ class Translation
         \GPBMetadata\Message::initOnce();
         $pool->internalAddGeneratedFile(
             '
-‡
-translation.protobrizyMessage.translation"Ã
+³
+translation.protobrizyMessage.translation"Ù
 TranslateEntityMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 
 entity_iri (	
 project_iri (	
 cloud_access_token (	
-brziy_api_access_token (	J"‰
+brziy_api_access_token (	
+entity_class (	J"Ÿ
 RemoveEntityTranslationMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 
 entity_iri (	
-project_iri (	bproto3'
+project_iri (	
+entity_class (	bproto3'
         , true);
 
         static::$is_initialized = true;
