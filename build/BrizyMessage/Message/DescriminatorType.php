@@ -47,6 +47,10 @@ class DescriminatorType
      * Generated from protobuf enum <code>CLOUD_DELETE_PROJECT_MESSAGE = 8;</code>
      */
     const CLOUD_DELETE_PROJECT_MESSAGE = 8;
+    /**
+     * Generated from protobuf enum <code>CLOUD_CLONE_PROJECT_MESSAGE = 9;</code>
+     */
+    const CLOUD_CLONE_PROJECT_MESSAGE = 9;
 
     private static $valueToName = [
         self::NONE => 'NONE',
@@ -58,6 +62,7 @@ class DescriminatorType
         self::CLOUD_DELETE_USER_MESSAGE => 'CLOUD_DELETE_USER_MESSAGE',
         self::CLOUD_CREATE_PROJECT_MESSAGE => 'CLOUD_CREATE_PROJECT_MESSAGE',
         self::CLOUD_DELETE_PROJECT_MESSAGE => 'CLOUD_DELETE_PROJECT_MESSAGE',
+        self::CLOUD_CLONE_PROJECT_MESSAGE => 'CLOUD_CLONE_PROJECT_MESSAGE',
     ];
 
     public static function name($value)
