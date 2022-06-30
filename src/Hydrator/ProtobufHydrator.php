@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace BrizySerializer\Hydrator;
 
+use BrizyMessage\Cloud\CloneProjectMessage;
 use BrizyMessage\Cloud\CreateProjectMessage;
 use BrizyMessage\Cloud\CreateUserMessage;
 use BrizyMessage\Cloud\DeleteProjectMessage;
@@ -46,6 +47,8 @@ final class ProtobufHydrator implements HydratorInterface
                 return $this->getInstanceOf(CreateUserMessage::class, $payload);
             case Message\DescriminatorType::CLOUD_DELETE_USER_MESSAGE:
                 return $this->getInstanceOf(DeleteUserMessage::class, $payload);
+            case Message\DescriminatorType::CLOUD_CLONE_PROJECT_MESSAGE:
+                return $this->getInstanceOf(CloneProjectMessage::class, $payload);
             default:
                 throw new ConvertToMessageFailedException("Unknown descriminator value");
         }
