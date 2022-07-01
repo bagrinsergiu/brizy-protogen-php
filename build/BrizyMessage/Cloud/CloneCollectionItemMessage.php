@@ -18,11 +18,19 @@ class CloneCollectionItemMessage extends \Google\Protobuf\Internal\Message
      */
     protected $descriminator = 0;
     /**
-     * Generated from protobuf field <code>string source_item_iri = 2;</code>
+     * Generated from protobuf field <code>string source_project_iri = 2;</code>
+     */
+    protected $source_project_iri = '';
+    /**
+     * Generated from protobuf field <code>string target_project_iri = 3;</code>
+     */
+    protected $target_project_iri = '';
+    /**
+     * Generated from protobuf field <code>string source_item_iri = 4;</code>
      */
     protected $source_item_iri = '';
     /**
-     * Generated from protobuf field <code>string target_item_iri = 3;</code>
+     * Generated from protobuf field <code>string target_item_iri = 5;</code>
      */
     protected $target_item_iri = '';
 
@@ -33,6 +41,8 @@ class CloneCollectionItemMessage extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $descriminator
+     *     @type string $source_project_iri
+     *     @type string $target_project_iri
      *     @type string $source_item_iri
      *     @type string $target_item_iri
      * }
@@ -65,7 +75,51 @@ class CloneCollectionItemMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string source_item_iri = 2;</code>
+     * Generated from protobuf field <code>string source_project_iri = 2;</code>
+     * @return string
+     */
+    public function getSourceProjectIri()
+    {
+        return $this->source_project_iri;
+    }
+
+    /**
+     * Generated from protobuf field <code>string source_project_iri = 2;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setSourceProjectIri($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->source_project_iri = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string target_project_iri = 3;</code>
+     * @return string
+     */
+    public function getTargetProjectIri()
+    {
+        return $this->target_project_iri;
+    }
+
+    /**
+     * Generated from protobuf field <code>string target_project_iri = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setTargetProjectIri($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->target_project_iri = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string source_item_iri = 4;</code>
      * @return string
      */
     public function getSourceItemIri()
@@ -74,7 +128,7 @@ class CloneCollectionItemMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string source_item_iri = 2;</code>
+     * Generated from protobuf field <code>string source_item_iri = 4;</code>
      * @param string $var
      * @return $this
      */
@@ -87,7 +141,7 @@ class CloneCollectionItemMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string target_item_iri = 3;</code>
+     * Generated from protobuf field <code>string target_item_iri = 5;</code>
      * @return string
      */
     public function getTargetItemIri()
@@ -96,7 +150,7 @@ class CloneCollectionItemMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string target_item_iri = 3;</code>
+     * Generated from protobuf field <code>string target_item_iri = 5;</code>
      * @param string $var
      * @return $this
      */

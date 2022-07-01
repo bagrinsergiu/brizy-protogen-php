@@ -17,7 +17,7 @@ class Cloud
         \GPBMetadata\Message::initOnce();
         $pool->internalAddGeneratedFile(
             '
-¡
+‘
 cloud.protobrizyMessage.cloud"d
 CreateUserMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
@@ -37,15 +37,19 @@ project_id (	"­
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 source_project_iri (	
 target_project_iri (	
-brziy_api_access_token (	"Ž
+brziy_api_access_token (	"Æ
 CloneCollectionItemMessage>
-descriminator (2\'.brizyMessage.Message.DescriminatorType
-source_item_iri (	
-target_item_iri (	"
+descriminator (2\'.brizyMessage.Message.DescriminatorType
+source_project_iri (	
+target_project_iri (	
+source_item_iri (	
+target_item_iri (	"È
 CloneCustomerMessage>
-descriminator (2\'.brizyMessage.Message.DescriminatorType
-source_customer_iri (	
-target_customer_iri (	bproto3'
+descriminator (2\'.brizyMessage.Message.DescriminatorType
+source_project_iri (	
+target_project_iri (	
+source_customer_iri (	
+target_customer_iri (	bproto3'
         , true);
 
         static::$is_initialized = true;
