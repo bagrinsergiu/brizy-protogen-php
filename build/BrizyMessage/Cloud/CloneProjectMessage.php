@@ -18,13 +18,13 @@ class CloneProjectMessage extends \Google\Protobuf\Internal\Message
      */
     protected $descriminator = 0;
     /**
-     * Generated from protobuf field <code>string source_project_id = 2;</code>
+     * Generated from protobuf field <code>string source_project_iri = 2;</code>
      */
-    protected $source_project_id = '';
+    protected $source_project_iri = '';
     /**
-     * Generated from protobuf field <code>string target_project_id = 3;</code>
+     * Generated from protobuf field <code>string target_project_iri = 3;</code>
      */
-    protected $target_project_id = '';
+    protected $target_project_iri = '';
     /**
      * Generated from protobuf field <code>string brziy_api_access_token = 4;</code>
      */
@@ -37,8 +37,8 @@ class CloneProjectMessage extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $descriminator
-     *     @type string $source_project_id
-     *     @type string $target_project_id
+     *     @type string $source_project_iri
+     *     @type string $target_project_iri
      *     @type string $brziy_api_access_token
      * }
      */
@@ -70,45 +70,45 @@ class CloneProjectMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string source_project_id = 2;</code>
+     * Generated from protobuf field <code>string source_project_iri = 2;</code>
      * @return string
      */
-    public function getSourceProjectId()
+    public function getSourceProjectIri()
     {
-        return $this->source_project_id;
+        return $this->source_project_iri;
     }
 
     /**
-     * Generated from protobuf field <code>string source_project_id = 2;</code>
+     * Generated from protobuf field <code>string source_project_iri = 2;</code>
      * @param string $var
      * @return $this
      */
-    public function setSourceProjectId($var)
+    public function setSourceProjectIri($var)
     {
         GPBUtil::checkString($var, True);
-        $this->source_project_id = $var;
+        $this->source_project_iri = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>string target_project_id = 3;</code>
+     * Generated from protobuf field <code>string target_project_iri = 3;</code>
      * @return string
      */
-    public function getTargetProjectId()
+    public function getTargetProjectIri()
     {
-        return $this->target_project_id;
+        return $this->target_project_iri;
     }
 
     /**
-     * Generated from protobuf field <code>string target_project_id = 3;</code>
+     * Generated from protobuf field <code>string target_project_iri = 3;</code>
      * @param string $var
      * @return $this
      */
-    public function setTargetProjectId($var)
+    public function setTargetProjectIri($var)
     {
         GPBUtil::checkString($var, True);
-        $this->target_project_id = $var;
+        $this->target_project_iri = $var;
 
         return $this;
     }
