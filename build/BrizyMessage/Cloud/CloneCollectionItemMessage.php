@@ -33,6 +33,10 @@ class CloneCollectionItemMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string target_item_iri = 5;</code>
      */
     protected $target_item_iri = '';
+    /**
+     * Generated from protobuf field <code>string brziy_api_access_token = 6;</code>
+     */
+    protected $brziy_api_access_token = '';
 
     /**
      * Constructor.
@@ -45,6 +49,7 @@ class CloneCollectionItemMessage extends \Google\Protobuf\Internal\Message
      *     @type string $target_project_iri
      *     @type string $source_item_iri
      *     @type string $target_item_iri
+     *     @type string $brziy_api_access_token
      * }
      */
     public function __construct($data = NULL) {
@@ -158,6 +163,28 @@ class CloneCollectionItemMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->target_item_iri = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string brziy_api_access_token = 6;</code>
+     * @return string
+     */
+    public function getBrziyApiAccessToken()
+    {
+        return $this->brziy_api_access_token;
+    }
+
+    /**
+     * Generated from protobuf field <code>string brziy_api_access_token = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setBrziyApiAccessToken($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->brziy_api_access_token = $var;
 
         return $this;
     }
