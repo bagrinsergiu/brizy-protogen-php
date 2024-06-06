@@ -71,6 +71,10 @@ class DescriminatorType
      * Generated from protobuf enum <code>DELETE_COLLECTION_ITEM_MESSAGE = 14;</code>
      */
     const DELETE_COLLECTION_ITEM_MESSAGE = 14;
+    /**
+     * Generated from protobuf enum <code>CLOUD_CLEAR_PLATFORM_CACHE_MESSAGE = 15;</code>
+     */
+    const CLOUD_CLEAR_PLATFORM_CACHE_MESSAGE = 15;
 
     private static $valueToName = [
         self::NONE => 'NONE',
@@ -88,6 +92,7 @@ class DescriminatorType
         self::CREATE_COLLECTION_ITEM_MESSAGE => 'CREATE_COLLECTION_ITEM_MESSAGE',
         self::UPDATE_COLLECTION_ITEM_MESSAGE => 'UPDATE_COLLECTION_ITEM_MESSAGE',
         self::DELETE_COLLECTION_ITEM_MESSAGE => 'DELETE_COLLECTION_ITEM_MESSAGE',
+        self::CLOUD_CLEAR_PLATFORM_CACHE_MESSAGE => 'CLOUD_CLEAR_PLATFORM_CACHE_MESSAGE',
     ];
 
     public static function name($value)

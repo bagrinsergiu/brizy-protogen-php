@@ -17,7 +17,7 @@ class Cloud
         \GPBMetadata\Message::initOnce();
         $pool->internalAddGeneratedFile(
             '
-Ñ
+®	
 cloud.protobrizyMessage.cloud"d
 CreateUserMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
@@ -51,7 +51,9 @@ project_id (	"­
 target_project_iri (	
 source_customer_iri (	
 target_customer_iri (	
-brziy_api_access_token (	bproto3'
+brziy_api_access_token (	"[
+ClearPlatformCacheMessage>
+descriminator (2\'.brizyMessage.Message.DescriminatorTypebproto3'
         , true);
 
         static::$is_initialized = true;
