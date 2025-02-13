@@ -17,7 +17,7 @@ class Brizy
         \GPBMetadata\Message::initOnce();
         $pool->internalAddGeneratedFile(
             '
-×
+¡
 brizy.protobrizyMessage.brizy"·
 CreateCollectionItemMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
@@ -34,6 +34,48 @@ entity_iri (	
 brziy_api_access_token (	
 user_id (	"·
 DeleteCollectionItemMessage>
+descriminator (2\'.brizyMessage.Message.DescriminatorType
+project_iri (	
+
+entity_iri (	
+brziy_api_access_token (	
+user_id (	"·
+CreateCollectionTypeMessage>
+descriminator (2\'.brizyMessage.Message.DescriminatorType
+project_iri (	
+
+entity_iri (	
+brziy_api_access_token (	
+user_id (	"·
+UpdateCollectionTypeMessage>
+descriminator (2\'.brizyMessage.Message.DescriminatorType
+project_iri (	
+
+entity_iri (	
+brziy_api_access_token (	
+user_id (	"·
+DeleteCollectionTypeMessage>
+descriminator (2\'.brizyMessage.Message.DescriminatorType
+project_iri (	
+
+entity_iri (	
+brziy_api_access_token (	
+user_id (	"±
+CreateCustomerMessage>
+descriminator (2\'.brizyMessage.Message.DescriminatorType
+project_iri (	
+
+entity_iri (	
+brziy_api_access_token (	
+user_id (	"±
+UpdateCustomerMessage>
+descriminator (2\'.brizyMessage.Message.DescriminatorType
+project_iri (	
+
+entity_iri (	
+brziy_api_access_token (	
+user_id (	"±
+DeleteCustomerMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
 

@@ -75,6 +75,30 @@ class DescriminatorType
      * Generated from protobuf enum <code>CLOUD_CLEAR_PLATFORM_CACHE_MESSAGE = 15;</code>
      */
     const CLOUD_CLEAR_PLATFORM_CACHE_MESSAGE = 15;
+    /**
+     * Generated from protobuf enum <code>CREATE_COLLECTION_TYPE_MESSAGE = 16;</code>
+     */
+    const CREATE_COLLECTION_TYPE_MESSAGE = 16;
+    /**
+     * Generated from protobuf enum <code>UPDATE_COLLECTION_TYPE_MESSAGE = 17;</code>
+     */
+    const UPDATE_COLLECTION_TYPE_MESSAGE = 17;
+    /**
+     * Generated from protobuf enum <code>DELETE_COLLECTION_TYPE_MESSAGE = 18;</code>
+     */
+    const DELETE_COLLECTION_TYPE_MESSAGE = 18;
+    /**
+     * Generated from protobuf enum <code>CREATE_CUSTOMER_MESSAGE = 19;</code>
+     */
+    const CREATE_CUSTOMER_MESSAGE = 19;
+    /**
+     * Generated from protobuf enum <code>UPDATE_CUSTOMER_MESSAGE = 20;</code>
+     */
+    const UPDATE_CUSTOMER_MESSAGE = 20;
+    /**
+     * Generated from protobuf enum <code>DELETE_CUSTOMER_MESSAGE = 21;</code>
+     */
+    const DELETE_CUSTOMER_MESSAGE = 21;
 
     private static $valueToName = [
         self::NONE => 'NONE',
@@ -93,6 +117,12 @@ class DescriminatorType
         self::UPDATE_COLLECTION_ITEM_MESSAGE => 'UPDATE_COLLECTION_ITEM_MESSAGE',
         self::DELETE_COLLECTION_ITEM_MESSAGE => 'DELETE_COLLECTION_ITEM_MESSAGE',
         self::CLOUD_CLEAR_PLATFORM_CACHE_MESSAGE => 'CLOUD_CLEAR_PLATFORM_CACHE_MESSAGE',
+        self::CREATE_COLLECTION_TYPE_MESSAGE => 'CREATE_COLLECTION_TYPE_MESSAGE',
+        self::UPDATE_COLLECTION_TYPE_MESSAGE => 'UPDATE_COLLECTION_TYPE_MESSAGE',
+        self::DELETE_COLLECTION_TYPE_MESSAGE => 'DELETE_COLLECTION_TYPE_MESSAGE',
+        self::CREATE_CUSTOMER_MESSAGE => 'CREATE_CUSTOMER_MESSAGE',
+        self::UPDATE_CUSTOMER_MESSAGE => 'UPDATE_CUSTOMER_MESSAGE',
+        self::DELETE_CUSTOMER_MESSAGE => 'DELETE_CUSTOMER_MESSAGE',
     ];
 
     public static function name($value)
