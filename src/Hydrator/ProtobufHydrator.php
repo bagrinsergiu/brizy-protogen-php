@@ -4,6 +4,15 @@ declare(strict_types=1);
 
 namespace BrizySerializer\Hydrator;
 
+use BrizyMessage\Brizy\CreateCollectionItemMessage;
+use BrizyMessage\Brizy\CreateCollectionTypeMessage;
+use BrizyMessage\Brizy\CreateCustomerMessage;
+use BrizyMessage\Brizy\DeleteCollectionItemMessage;
+use BrizyMessage\Brizy\DeleteCollectionTypeMessage;
+use BrizyMessage\Brizy\DeleteCustomerMessage;
+use BrizyMessage\Brizy\UpdateCollectionItemMessage;
+use BrizyMessage\Brizy\UpdateCollectionTypeMessage;
+use BrizyMessage\Brizy\UpdateCustomerMessage;
 use BrizyMessage\Cloud\CloneCollectionItemMessage;
 use BrizyMessage\Cloud\CloneCustomerMessage;
 use BrizyMessage\Cloud\CloneProjectMessage;
@@ -19,6 +28,7 @@ use BrizySerializer\Hydrator\Exception\VersionNotSupportedException;
 use BrizySerializer\Transformer\ProtobufTransformer;
 use BrizyMessage\Translation\TranslateEntityMessage;
 use BrizyMessage\Translation\RemoveEntityTranslationMessage;
+use Phalcon\DataMapper\Query\Update;
 
 final class ProtobufHydrator implements HydratorInterface
 {
@@ -55,6 +65,30 @@ final class ProtobufHydrator implements HydratorInterface
                 return $this->getInstanceOf(CloneCollectionItemMessage::class, $payload);
             case Message\DescriminatorType::CLOUD_CLONE_CUSTOEMR_MESSAGE:
                 return $this->getInstanceOf(CloneCustomerMessage::class, $payload);
+
+            case Message\DescriminatorType::CREATE_COLLECTION_ITEM_MESSAGE:
+                return $this->getInstanceOf(CreateCollectionItemMessage::class, $payload);
+            case Message\DescriminatorType::UPDATE_COLLECTION_ITEM_MESSAGE:
+                return $this->getInstanceOf(UpdateCollectionItemMessage::class, $payload);
+            case Message\DescriminatorType::DELETE_COLLECTION_ITEM_MESSAGE:
+                return $this->getInstanceOf(DeleteCollectionItemMessage::class, $payload);
+
+            case Message\DescriminatorType::CREATE_COLLECTION_TYPE_MESSAGE:
+                return $this->getInstanceOf(CreateCollectionTypeMessage::class, $payload);
+            case Message\DescriminatorType::UPDATE_COLLECTION_TYPE_MESSAGE:
+                return $this->getInstanceOf(UpdateCollectionTypeMessage::class, $payload);
+            case Message\DescriminatorType::DELETE_COLLECTION_TYPE_MESSAGE:
+                return $this->getInstanceOf(DeleteCollectionTypeMessage::class, $payload);
+
+            case Message\DescriminatorType::CREATE_CUSTOMER_MESSAGE:
+                return $this->getInstanceOf(CreateCustomerMessage::class, $payload);
+            case Message\DescriminatorType::UPDATE_CUSTOMER_MESSAGE:
+                return $this->getInstanceOf(UpdateCustomerMessage::class, $payload);
+            case Message\DescriminatorType::DELETE_CUSTOMER_MESSAGE:
+                return $this->getInstanceOf(DeleteCustomerMessage::class, $payload);
+
+
+
             default:
                 throw new ConvertToMessageFailedException("Unknown descriminator value");
         }
