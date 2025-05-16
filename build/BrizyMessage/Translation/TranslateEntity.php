@@ -23,11 +23,16 @@ class TranslateEntity
      * Generated from protobuf enum <code>CUSTOMER = 2;</code>
      */
     const CUSTOMER = 2;
+    /**
+     * Generated from protobuf enum <code>METAFIELD = 3;</code>
+     */
+    const METAFIELD = 3;
 
     private static $valueToName = [
         self::UNKNOWN => 'UNKNOWN',
         self::COLLECTION => 'COLLECTION',
         self::CUSTOMER => 'CUSTOMER',
+        self::METAFIELD => 'METAFIELD',
     ];
 
     public static function name($value)
