@@ -17,71 +17,80 @@ class Brizy
         \GPBMetadata\Message::initOnce();
         $pool->internalAddGeneratedFile(
             '
-¡
-brizy.protobrizyMessage.brizy"·
+
+brizy.protobrizyMessage.brizy"Ó
 CreateCollectionItemMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
 
 entity_iri (	
 brziy_api_access_token (	
-user_id (	"·
+user_id (	
+cloud_access_token (	"Ó
 UpdateCollectionItemMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
 
 entity_iri (	
 brziy_api_access_token (	
-user_id (	"·
+user_id (	
+cloud_access_token (	"Ó
 DeleteCollectionItemMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
 
 entity_iri (	
 brziy_api_access_token (	
-user_id (	"·
+user_id (	
+cloud_access_token (	"Ó
 CreateCollectionTypeMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
 
 entity_iri (	
 brziy_api_access_token (	
-user_id (	"·
+user_id (	
+cloud_access_token (	"Ó
 UpdateCollectionTypeMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
 
 entity_iri (	
 brziy_api_access_token (	
-user_id (	"·
+user_id (	
+cloud_access_token (	"Ó
 DeleteCollectionTypeMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
 
 entity_iri (	
 brziy_api_access_token (	
-user_id (	"±
+user_id (	
+cloud_access_token (	"Í
 CreateCustomerMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
 
 entity_iri (	
 brziy_api_access_token (	
-user_id (	"±
+user_id (	
+cloud_access_token (	"Í
 UpdateCustomerMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
 
 entity_iri (	
 brziy_api_access_token (	
-user_id (	"±
+user_id (	
+cloud_access_token (	"Í
 DeleteCustomerMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
 
 entity_iri (	
 brziy_api_access_token (	
-user_id (	bproto3'
+user_id (	
+cloud_access_token (	bproto3'
         , true);
 
         static::$is_initialized = true;

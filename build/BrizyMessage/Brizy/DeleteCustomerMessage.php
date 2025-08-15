@@ -33,6 +33,10 @@ class DeleteCustomerMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string user_id = 5;</code>
      */
     protected $user_id = '';
+    /**
+     * Generated from protobuf field <code>string cloud_access_token = 6;</code>
+     */
+    protected $cloud_access_token = '';
 
     /**
      * Constructor.
@@ -45,6 +49,7 @@ class DeleteCustomerMessage extends \Google\Protobuf\Internal\Message
      *     @type string $entity_iri
      *     @type string $brziy_api_access_token
      *     @type string $user_id
+     *     @type string $cloud_access_token
      * }
      */
     public function __construct($data = NULL) {
@@ -158,6 +163,28 @@ class DeleteCustomerMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->user_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cloud_access_token = 6;</code>
+     * @return string
+     */
+    public function getCloudAccessToken()
+    {
+        return $this->cloud_access_token;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cloud_access_token = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCloudAccessToken($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->cloud_access_token = $var;
 
         return $this;
     }
