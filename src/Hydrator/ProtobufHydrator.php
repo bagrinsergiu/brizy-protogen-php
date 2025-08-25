@@ -7,12 +7,15 @@ namespace BrizySerializer\Hydrator;
 use BrizyMessage\Brizy\CreateCollectionItemMessage;
 use BrizyMessage\Brizy\CreateCollectionTypeMessage;
 use BrizyMessage\Brizy\CreateCustomerMessage;
+use BrizyMessage\Brizy\CreateSymbolMessage;
 use BrizyMessage\Brizy\DeleteCollectionItemMessage;
 use BrizyMessage\Brizy\DeleteCollectionTypeMessage;
 use BrizyMessage\Brizy\DeleteCustomerMessage;
+use BrizyMessage\Brizy\DeleteSymbolMessage;
 use BrizyMessage\Brizy\UpdateCollectionItemMessage;
 use BrizyMessage\Brizy\UpdateCollectionTypeMessage;
 use BrizyMessage\Brizy\UpdateCustomerMessage;
+use BrizyMessage\Brizy\UpdateSymbolMessage;
 use BrizyMessage\Cloud\CloneCollectionItemMessage;
 use BrizyMessage\Cloud\CloneCustomerMessage;
 use BrizyMessage\Cloud\CloneProjectMessage;
@@ -86,6 +89,13 @@ final class ProtobufHydrator implements HydratorInterface
                 return $this->getInstanceOf(UpdateCustomerMessage::class, $payload);
             case Message\DescriminatorType::DELETE_CUSTOMER_MESSAGE:
                 return $this->getInstanceOf(DeleteCustomerMessage::class, $payload);
+
+            case Message\DescriminatorType::CREATE_SYMBOL_MESSAGE:
+                return $this->getInstanceOf(CreateSymbolMessage::class, $payload);
+            case Message\DescriminatorType::UPDATE_SYMBOL_MESSAGE:
+                return $this->getInstanceOf(UpdateSymbolMessage::class, $payload);
+            case Message\DescriminatorType::DELETE_SYMBOL_MESSAGE:
+                return $this->getInstanceOf(DeleteSymbolMessage::class, $payload);
 
 
 
