@@ -56,9 +56,9 @@ class DescriminatorType
      */
     const CLOUD_CLONE_COLLECTION_ITEM_MESSAGE = 10;
     /**
-     * Generated from protobuf enum <code>CLOUD_CLONE_CUSTOEMR_MESSAGE = 11;</code>
+     * Generated from protobuf enum <code>CLOUD_CLONE_CUSTOMER_MESSAGE = 11;</code>
      */
-    const CLOUD_CLONE_CUSTOEMR_MESSAGE = 11;
+    const CLOUD_CLONE_CUSTOMER_MESSAGE = 11;
     /**
      * Generated from protobuf enum <code>CREATE_COLLECTION_ITEM_MESSAGE = 12;</code>
      */
@@ -99,6 +99,18 @@ class DescriminatorType
      * Generated from protobuf enum <code>DELETE_CUSTOMER_MESSAGE = 21;</code>
      */
     const DELETE_CUSTOMER_MESSAGE = 21;
+    /**
+     * Generated from protobuf enum <code>CREATE_SYMBOL_MESSAGE = 22;</code>
+     */
+    const CREATE_SYMBOL_MESSAGE = 22;
+    /**
+     * Generated from protobuf enum <code>UPDATE_SYMBOL_MESSAGE = 23;</code>
+     */
+    const UPDATE_SYMBOL_MESSAGE = 23;
+    /**
+     * Generated from protobuf enum <code>DELETE_SYMBOL_MESSAGE = 24;</code>
+     */
+    const DELETE_SYMBOL_MESSAGE = 24;
 
     private static $valueToName = [
         self::NONE => 'NONE',
@@ -112,7 +124,7 @@ class DescriminatorType
         self::CLOUD_DELETE_PROJECT_MESSAGE => 'CLOUD_DELETE_PROJECT_MESSAGE',
         self::CLOUD_CLONE_PROJECT_MESSAGE => 'CLOUD_CLONE_PROJECT_MESSAGE',
         self::CLOUD_CLONE_COLLECTION_ITEM_MESSAGE => 'CLOUD_CLONE_COLLECTION_ITEM_MESSAGE',
-        self::CLOUD_CLONE_CUSTOEMR_MESSAGE => 'CLOUD_CLONE_CUSTOEMR_MESSAGE',
+        self::CLOUD_CLONE_CUSTOMER_MESSAGE => 'CLOUD_CLONE_CUSTOMER_MESSAGE',
         self::CREATE_COLLECTION_ITEM_MESSAGE => 'CREATE_COLLECTION_ITEM_MESSAGE',
         self::UPDATE_COLLECTION_ITEM_MESSAGE => 'UPDATE_COLLECTION_ITEM_MESSAGE',
         self::DELETE_COLLECTION_ITEM_MESSAGE => 'DELETE_COLLECTION_ITEM_MESSAGE',
@@ -123,6 +135,9 @@ class DescriminatorType
         self::CREATE_CUSTOMER_MESSAGE => 'CREATE_CUSTOMER_MESSAGE',
         self::UPDATE_CUSTOMER_MESSAGE => 'UPDATE_CUSTOMER_MESSAGE',
         self::DELETE_CUSTOMER_MESSAGE => 'DELETE_CUSTOMER_MESSAGE',
+        self::CREATE_SYMBOL_MESSAGE => 'CREATE_SYMBOL_MESSAGE',
+        self::UPDATE_SYMBOL_MESSAGE => 'UPDATE_SYMBOL_MESSAGE',
+        self::DELETE_SYMBOL_MESSAGE => 'DELETE_SYMBOL_MESSAGE',
     ];
 
     public static function name($value)
