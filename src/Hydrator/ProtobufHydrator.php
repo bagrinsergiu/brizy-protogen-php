@@ -12,6 +12,7 @@ use BrizyMessage\Brizy\DeleteCollectionItemMessage;
 use BrizyMessage\Brizy\DeleteCollectionTypeMessage;
 use BrizyMessage\Brizy\DeleteCustomerMessage;
 use BrizyMessage\Brizy\DeleteSymbolMessage;
+use BrizyMessage\Brizy\PublishedScheduledCollectionItemMessage;
 use BrizyMessage\Brizy\UpdateCollectionItemMessage;
 use BrizyMessage\Brizy\UpdateCollectionTypeMessage;
 use BrizyMessage\Brizy\UpdateCustomerMessage;
@@ -73,6 +74,8 @@ final class ProtobufHydrator implements HydratorInterface
                 return $this->getInstanceOf(CreateCollectionItemMessage::class, $payload);
             case Message\DescriminatorType::UPDATE_COLLECTION_ITEM_MESSAGE:
                 return $this->getInstanceOf(UpdateCollectionItemMessage::class, $payload);
+            case Message\DescriminatorType::PUBLISH_SCHEDULED_COLLECTION_ITEM_MESSAGE:
+                return $this->getInstanceOf(PublishedScheduledCollectionItemMessage::class, $payload);
             case Message\DescriminatorType::DELETE_COLLECTION_ITEM_MESSAGE:
                 return $this->getInstanceOf(DeleteCollectionItemMessage::class, $payload);
 
@@ -96,8 +99,6 @@ final class ProtobufHydrator implements HydratorInterface
                 return $this->getInstanceOf(UpdateSymbolMessage::class, $payload);
             case Message\DescriminatorType::DELETE_SYMBOL_MESSAGE:
                 return $this->getInstanceOf(DeleteSymbolMessage::class, $payload);
-
-
 
             default:
                 throw new ConvertToMessageFailedException("Unknown descriminator value");
