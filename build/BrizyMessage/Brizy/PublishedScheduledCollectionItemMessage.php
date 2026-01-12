@@ -9,9 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>brizyMessage.brizy.PublishScheduledCollectionItemMessage</code>
+ * Generated from protobuf message <code>brizyMessage.brizy.PublishedScheduledCollectionItemMessage</code>
  */
-class PublishScheduledCollectionItemMessage extends \Google\Protobuf\Internal\Message
+class PublishedScheduledCollectionItemMessage extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>.brizyMessage.Message.DescriminatorType descriminator = 1;</code>

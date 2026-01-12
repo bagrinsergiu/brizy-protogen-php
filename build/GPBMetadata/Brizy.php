@@ -17,7 +17,7 @@ class Brizy
         \GPBMetadata\Message::initOnce();
         $pool->internalAddGeneratedFile(
             '
-º
+¼
 brizy.protobrizyMessage.brizy"Ó
 CreateCollectionItemMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
@@ -34,8 +34,8 @@ entity_iri (	
 entity_iri (	
 brziy_api_access_token (	
 user_id (	
-cloud_access_token (	"°
-%PublishScheduledCollectionItemMessage>
+cloud_access_token (	"²
+\'PublishedScheduledCollectionItemMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
 
