@@ -67,7 +67,7 @@ final class ProtobufHydrator implements HydratorInterface
                 return $this->getInstanceOf(CloneProjectMessage::class, $payload);
             case Message\DescriminatorType::CLOUD_CLONE_COLLECTION_ITEM_MESSAGE:
                 return $this->getInstanceOf(CloneCollectionItemMessage::class, $payload);
-            case Message\DescriminatorType::CLOUD_CLONE_CUSTOEMR_MESSAGE:
+            case Message\DescriminatorType::CLOUD_CLONE_CUSTOMER_MESSAGE:
                 return $this->getInstanceOf(CloneCustomerMessage::class, $payload);
 
             case Message\DescriminatorType::CREATE_COLLECTION_ITEM_MESSAGE:
@@ -101,7 +101,7 @@ final class ProtobufHydrator implements HydratorInterface
                 return $this->getInstanceOf(DeleteSymbolMessage::class, $payload);
 
             default:
-                throw new ConvertToMessageFailedException("Unknown descriminator value");
+                throw new ConvertToMessageFailedException("Unknown discriminator value");
         }
     }
 
