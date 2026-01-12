@@ -111,6 +111,10 @@ class DescriminatorType
      * Generated from protobuf enum <code>DELETE_SYMBOL_MESSAGE = 24;</code>
      */
     const DELETE_SYMBOL_MESSAGE = 24;
+    /**
+     * Generated from protobuf enum <code>PUBLISH_SCHEDULED_COLLECTION_ITEM_MESSAGE = 25;</code>
+     */
+    const PUBLISH_SCHEDULED_COLLECTION_ITEM_MESSAGE = 25;
 
     private static $valueToName = [
         self::NONE => 'NONE',
@@ -138,6 +142,7 @@ class DescriminatorType
         self::CREATE_SYMBOL_MESSAGE => 'CREATE_SYMBOL_MESSAGE',
         self::UPDATE_SYMBOL_MESSAGE => 'UPDATE_SYMBOL_MESSAGE',
         self::DELETE_SYMBOL_MESSAGE => 'DELETE_SYMBOL_MESSAGE',
+        self::PUBLISH_SCHEDULED_COLLECTION_ITEM_MESSAGE => 'PUBLISH_SCHEDULED_COLLECTION_ITEM_MESSAGE',
     ];
 
     public static function name($value)
